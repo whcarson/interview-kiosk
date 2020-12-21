@@ -16,14 +16,13 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
   4) Successfully run `vagrant up`
   5) Use a combination of the VirtualBox GUI, `vagrant ssh`, and your favorite text editor to get our search app ready for deployment.
 
-
 TODO
 ---
 To get the search app into the hands of our patrons, here are a few things we need help with:
-  1) Installing the search app
-  2) Runing the search app when the machine boots
-  3) Adding the search app to the homepage
-  4) Adding a search app launcher to the desktop
+  1) Installing the search app (adding code to `provision.bash`)
+  2) Runing the search app when the machine boots (creating and enabling a `search.service`)
+  3) Adding the search app to the homepage (adding a bootstrap card to `index.html`)
+  4) Adding a search app launcher to the desktop (creating and installing a `Search.desktop`)
 
 Hints
 ---
