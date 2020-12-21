@@ -16,7 +16,7 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
      - If you're on MacOS and the installation fails, you may need to [temporarily disable SIP](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) *(you need to have SIP enabled to run VirtualBox after installing)*.
 
   3) Use git to clone [our repo](https://github.com/TechLit/interview-kiosk/)
-  4) From inside the repo, successfully run `vagrant up` (to download our base image and provision the library's software)
+  4) From inside the repo, successfully run `vagrant up` to download our base image and provision the library's software *(be warned: this will take time and cost at least 4 gigs)*.
   5) Use a combination of the VirtualBox GUI, `vagrant ssh`, and your favorite text editor to get our search app ready for deployment.
 
 TODO
