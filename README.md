@@ -12,7 +12,8 @@ Getting Started
 We are using Vagrant to build our desktop as VirtualBox images. Here's how you can get started:
   1) Install [Vagrant](https://www.vagrantup.com/downloads)
   2) Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) with [VM Extensions](https://www.virtualbox.org/wiki/Downloads)
-  3) Use git to clone [our repo](https://gitlab.com/techlit-africa/interview-kiosk)
+    a) If you're on MacOS and the installation fails, you may need to [temporarily disable SIP](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) *(you need to have SIP enabled to run VirtualBox after installing)*.
+  3) Use git to clone [our repo](https://github.com/TechLit/interview-kiosk/)
   4) Successfully run `vagrant up`
   5) Use a combination of the VirtualBox GUI, `vagrant ssh`, and your favorite text editor to get our search app ready for deployment.
 
