@@ -10,14 +10,22 @@ We have always had a catalog app that lists all the books on-site, but patrons s
 Getting Started
 ---
 We are using Vagrant to build our desktop as VirtualBox images. Here's how you can get started:
-  1) Install [Vagrant](https://www.vagrantup.com/downloads)
-  2) Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) __and__ [VM Extensions](https://www.virtualbox.org/wiki/Downloads)
+  1) Install [Vagrant](https://www.vagrantup.com/downloads).
+  2) Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+   
+     - Download the installer or binary for whichever platform you're on *(under `VirtualBox 6.X.X platform Packages`)*.
      
-     - If you're on MacOS and the installation fails, you may need to [temporarily disable SIP](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) *(you need to have SIP enabled to run VirtualBox after installing)*.
+     - If you're on MacOS and the installation fails, you may need to [temporarily disable SIP](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
 
-  3) Use git to clone [our repo](https://github.com/TechLit/interview-kiosk/)
-  4) From inside the repo, successfully run `vagrant up` to download our base image and provision the library's software *(be warned: this will take time and cost at least 4 gigs)*.
-  5) Use a combination of the VirtualBox GUI, `vagrant ssh`, and your favorite text editor to get our search app ready for deployment.
+  3) Install the [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads).
+
+     - Download the universal package *(use the `All supported platforms` link under `VirtualBox 6.X.X Oracle VM VirtualBox Extension Pack`)*.
+
+     - If you're on MacOS and disabled SIP, you need to [enable it](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) before continuing.
+
+  4) Use git to clone [this repo](./).
+  5) From inside the repo, successfully run `vagrant up` to download our base image and provision the library's software *(this will take a while and cost at least 4 gigs)*.
+  6) Use a combination of the VirtualBox GUI, `vagrant ssh`, and your favorite text editor to get our search app ready for deployment.
 
 TODO
 ---
