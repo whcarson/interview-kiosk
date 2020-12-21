@@ -25,19 +25,24 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
 
   4) Use git to clone [this repo](./).
   5) From inside the repo, successfully run `vagrant up` to download our base image and provision the library's software *(this will take a while and cost at least 4 gigs)*.
-  6) Use a combination of the VirtualBox GUI, `vagrant ssh`, and your favorite text editor to get our search app ready for deployment.
+  6) Read `Vagrantfile`, then `provision.bash`. These are the files you'll be contributing to.
+  7) Get our search app ready for deployment (finish the TODOs).
 
 TODO
 ---
 To get the search app into the hands of our patrons, here are a few things we need help with:
-  1) Installing the search app (adding code to `provision.bash`)
-  2) Runing the search app when the machine boots (creating and enabling a `search.service`)
-  3) Adding the search app to the homepage (adding a bootstrap card to `index.html`)
-  4) Adding a search app launcher to the desktop (creating and installing a `Search.desktop`)
+  1) Install the search app (add a `configure_search` function to `provision.bash` that copies files onto the image)
+  2) Run the search app when the machine boots (creating a `search.service` and installing it in `configure_search`)
+  3) Add the search app to the homepage (adding a bootstrap card to `index.html`)
+  4) Add a search app launcher to the desktop (creating and installing a `Search.desktop`)
+  5) *_BONUS_*: Why is there no "back to homepage" link in the catalog app? Is there anything else we can do to make these apps better?
 
 Hints
 ---
-- The catalog app is a full example you should reference
+- You can make changes directly to the image through VirtualBox, but we ultimately want to update `provision.bash`, so the changes can be reproduced.
+- To test changes to the code, I used `vagrant destroy` followed by `vagrant up`, but you might find a better way.
+- Sometimes, I like to use `vagrant ssh` to find and edit files, because my native environment is more comfortable than the VirtualBox environment.
+- The catalog app has a `Catalog.desktop` file, `catalog.service` file and a `configure_catalog` function that you should reference.
 - The webpages use [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - The apps use [Sinatra](http://sinatrarb.com/intro.html)
 - The image is Linux Mint 19 with the Cinnamon desktop (Mint is a derivative of Ubuntu and Debian)
