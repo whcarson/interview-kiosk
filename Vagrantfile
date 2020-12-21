@@ -14,14 +14,5 @@ Vagrant.configure('2') do |config|
     vb.memory = '1024'
   end
 
-  config.vm.provision 'shell', inline: <<~SH
-    apt-get update -y && \
-    apt-get install -y \
-      nginx \
-      postgresql \
-      ruby \
-      ruby-pg \
-      ruby-sinatra \
-      chromium-browser
-  SH
+  config.vm.provision :shell, path: 'provision.bash'
 end
