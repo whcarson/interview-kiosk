@@ -25,8 +25,11 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
 
   4) Use git to clone [this repo](./).
   5) From inside the repo, successfully run `vagrant up` to download our base image and provision the library's software *(this will take a while and cost at least 4 gigs)*.
-  6) Read `Vagrantfile`, then `provision.bash`. These are the files you'll be contributing to.
-  7) Get our search app ready for deployment (finish the TODOs).
+
+     - If you're on MacOS and virtualbox fails to run, you might need to allow Oracle to run things. You'll see that something was blocked from the General tab of the Security Page in your System Preferences app.
+
+  7) Read `Vagrantfile`, then `provision.bash`. These are the files you'll be contributing to.
+  8) Get our search app ready for deployment (finish the TODOs).
 
 TODO
 ---
