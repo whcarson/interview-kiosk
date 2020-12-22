@@ -10,6 +10,11 @@ We have always had a catalog app that lists all the books on-site, but patrons s
 Getting Started
 ---
 We are using Vagrant to build our desktop as VirtualBox images. Here's how you can get started:
+  0) Have a comfy terminal.
+
+    - If you're on MacOS, [iTerm2](https://iterm2.com/) is a good place to start
+    - If you're on Windows, [Cmder](https://cmder.net/) is best
+
   1) Install [Vagrant](https://www.vagrantup.com/downloads).
   2) Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
    
@@ -25,7 +30,7 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
 
   4) Use git to clone [this repo](./)
 
-     - If you're on Windows, then git may convert all LF characters into CRLF characters, which breaks the ruby apps, so you probably want to set core.autocrlf to input when cloning: `git clone -c core.autocrlf=input https://github.com/TechLit/interview-kiosk` 
+     - If you're on Windows, then [git may convert all LF characters into CRLF characters](https://stackoverflow.com/a/20653073), which breaks the ruby apps, so you probably want to set core.autocrlf to input when cloning: `git clone -c core.autocrlf=input https://github.com/TechLit/interview-kiosk` 
 
   5) From inside the repo, successfully run `vagrant up` to download our base image and provision the library's software *(this will take a while and cost at least 4 gigs)*.
 
