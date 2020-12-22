@@ -38,6 +38,9 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
      - If you're on MacOS and virtualbox fails to run, you might need to allow Oracle to run things. You'll see that something was blocked from the General tab of the Security Page in your System Preferences app.
 
   6) Read `Vagrantfile`, then `provision.bash`. These are the files you'll be contributing to.
+  
+     - Chances are, your OS won't open all of the relevant source files in the same editor or IDE, which could cause you to waste lots of memory. If you want a smoother experience, you should open the entire repo in your favorite editor or IDE.
+  
   7) Get our search app ready for deployment (finish the TODOs).
 
 TODO
