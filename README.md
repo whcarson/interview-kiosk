@@ -23,7 +23,10 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
 
      - If you're on MacOS and disabled SIP, you need to [enable it](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) before continuing.
 
-  4) Use git to clone [this repo](./).
+  4) Use git to clone [this repo](./)
+
+     - If you're on Windows, then git may convert all LF characters into CRLF characters, which breaks the ruby apps, so you probably want to set core.autocrlf to input when cloning: `git clone -c core.autocrlf=input https://github.com/TechLit/interview-kiosk` 
+
   5) From inside the repo, successfully run `vagrant up` to download our base image and provision the library's software *(this will take a while and cost at least 4 gigs)*.
 
      - If you're on MacOS and virtualbox fails to run, you might need to allow Oracle to run things. You'll see that something was blocked from the General tab of the Security Page in your System Preferences app.
