@@ -50,7 +50,7 @@ To get the search app into the hands of our patrons, here are a few things we ne
   2) Run the search app when the machine boots (creating a `search.service` and installing it in `configure_search`)
   3) Add the search app to the homepage (adding a bootstrap card to `index.html`)
   4) Add a search app launcher to the desktop (creating and installing a `Search.desktop`)
-  5) *_BONUS_*: Why is there no "back to homepage" link in the catalog app? Is there anything else we can do to make these apps better?
+  5) *_BONUS_*: All these apps could use a few extra features like links between apps or sorting. Add whatever features you're comfortable with!
 
 Hints
 ---
