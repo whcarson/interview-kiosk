@@ -14,7 +14,7 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
   1) Have a comfy terminal.
 
      - If you're on MacOS, [iTerm2](https://iterm2.com/) is a good place to start
-     - If you're on Windows, [Cmder](https://cmder.net/) is best
+     - If you're on Windows, [Cmder](https://github.com/pmihalcin/cmder-git-bash-windows) is best
 
   2) Install [Vagrant](https://www.vagrantup.com/downloads).
   3) Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
