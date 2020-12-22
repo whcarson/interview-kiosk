@@ -10,25 +10,26 @@ We have always had a catalog app that lists all the books on-site, but patrons s
 Getting Started
 ---
 We are using Vagrant to build our desktop as VirtualBox images. Here's how you can get started:
-  0) Have a comfy terminal.
 
-    - If you're on MacOS, [iTerm2](https://iterm2.com/) is a good place to start
-    - If you're on Windows, [Cmder](https://cmder.net/) is best
+  1) Have a comfy terminal.
 
-  1) Install [Vagrant](https://www.vagrantup.com/downloads).
-  2) Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+     - If you're on MacOS, [iTerm2](https://iterm2.com/) is a good place to start
+     - If you're on Windows, [Cmder](https://cmder.net/) is best
+
+  2) Install [Vagrant](https://www.vagrantup.com/downloads).
+  3) Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
    
      - Download the installer or binary for whichever platform you're on *(under `VirtualBox 6.X.X platform Packages`)*.
      
      - If you're on MacOS and the installation fails, you may need to [temporarily disable SIP](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
 
-  3) Install the [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads).
+  4) Install the [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads).
 
      - Download the universal package *(use the `All supported platforms` link under `VirtualBox 6.X.X Oracle VM VirtualBox Extension Pack`)*.
 
      - If you're on MacOS and disabled SIP, you need to [enable it](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) before continuing.
 
-  4) Use git to clone [this repo](./)
+  5) Use git to clone [this repo](./)
 
      - If you're on Windows, then [git may convert all LF characters into CRLF characters](https://stackoverflow.com/a/20653073), which breaks the ruby apps, so you probably want to set core.autocrlf to input when cloning: `git clone -c core.autocrlf=input https://github.com/TechLit/interview-kiosk` 
 
@@ -36,8 +37,8 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
 
      - If you're on MacOS and virtualbox fails to run, you might need to allow Oracle to run things. You'll see that something was blocked from the General tab of the Security Page in your System Preferences app.
 
-  7) Read `Vagrantfile`, then `provision.bash`. These are the files you'll be contributing to.
-  8) Get our search app ready for deployment (finish the TODOs).
+  6) Read `Vagrantfile`, then `provision.bash`. These are the files you'll be contributing to.
+  7) Get our search app ready for deployment (finish the TODOs).
 
 TODO
 ---
