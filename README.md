@@ -14,7 +14,7 @@ We are using Vagrant to build our desktop as VirtualBox images. Here's how you c
   1) Have a comfy terminal.
 
      - If you're on MacOS, [iTerm2](https://iterm2.com/) is a good place to start
-     - If you're on Windows, [Cmder](https://github.com/pmihalcin/cmder-git-bash-windows) is best
+     - If you're on Windows, [Cmder](https://github.com/pmihalcin/cmder-git-bash-windows) is best ([video version](https://www.youtube.com/watch?v=ncBPkuhpszY))
 
   2) Install [Vagrant](https://www.vagrantup.com/downloads).
   3) Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
@@ -58,6 +58,7 @@ Hints
 - To test changes to the code, I used `vagrant destroy` followed by `vagrant up`, but you might find a better way.
 - Sometimes, I like to use `vagrant ssh` to find and edit files, because my native environment is more comfortable than the VirtualBox environment.
 - The catalog app has a `Catalog.desktop` file, `catalog.service` file and a `configure_catalog` function that you should reference.
+- The `*.desktop` and `*.service` files are `systemd` files. Here's the Arch Wiki page for [`systemd`](https://wiki.archlinux.org/index.php/systemd).
 - The webpages use [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - The apps use [Sinatra](http://sinatrarb.com/intro.html)
 - The image is Linux Mint 19 with the Cinnamon desktop (Mint is a derivative of Ubuntu and Debian)
