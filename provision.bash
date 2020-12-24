@@ -36,6 +36,13 @@ configure_nginx() {
   cp -R /vagrant/data/nginx/* /var/www/html
 }
 
+configure_search() {
+  ([[ -d /var/www/search ]] || mkdir /var/www/search) && \
+  cp -R /vagrant/data/search/* /var/www/search && \
+  systemctl start search.service && \
+  systemctl enable search.service
+}
+
 configure_catalog() {
   ([[ -d /var/www/catalog ]] || mkdir /var/www/catalog) && \
     cp -R /vagrant/data/catalog/* /var/www/catalog && \
@@ -51,6 +58,7 @@ main() {
     configure_desktop && \
     configure_nginx && \
     configure_catalog && \
+    configure_search && \
     echo 'successfully provisioned'
 }
 
